@@ -1,0 +1,7 @@
+{
+    "NetworkInterface": "Wi-Fi",
+    "Devices": [
+        {"Name": "Pump1", "Address": "10.1.1.40:49153", "DutyCycle": 15000000000, "Frequency": 900000000000},
+        {"Name": "Pump2", "Address": "10.1.1.41:49153", "DutyCycle": 15000000000, "Frequency": 900000000000}
+    ]
+}
