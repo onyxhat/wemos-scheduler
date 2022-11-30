@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	log "github.com/Sirupsen/logrus"
 	wemo "github.com/danward79/go.wemo"
+	log "github.com/sirupsen/logrus"
 )
 
 func scheduler(device Device, eventqueue chan Event) {
