@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	log "github.com/Sirupsen/logrus"
 	"github.com/kardianos/osext"
+	log "github.com/sirupsen/logrus"
 )
 
 //Global
