@@ -121,11 +121,13 @@ jobs:
         SHA: ${{ github.sha }}
 
     - name: UPX Compression
-      if: ${{ env.ENABLE_COMPRESSION == 'true' }}
-      uses: gacts/upx@v1.0.1
+      uses: crazy-max/ghaction-upx@v2.1.0
       with:
-        dir: ./${{ env.BINARY_OUTDIR }}/
-        upx_args: -8
+        version: latest
+        files: |
+          ./${{ env.BINARY_OUTDIR }}/**
+        args: -8
+
 
     - name: Create PreRelease
       uses: ncipollo/release-action@v1
